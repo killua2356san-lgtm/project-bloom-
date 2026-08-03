@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday, Doaa</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <canvas id="stars"></canvas>
+
+    <div class="moon"></div>
+
+    <div class="aurora"></div>
+
+    <!-- ================= Loading ================= -->
+
+    <section id="loadingScene" class="scene active">
+
+        <div class="loader"></div>
+
+        <p>Preparing something special...</p>
+
+    </section>
+
+    <!-- ================= Intro ================= -->
+
+    <section id="introScene" class="scene">
+
+        <div class="intro-content">
+
+            <h2 class="fade-line">
+                Every birthday tells a story...
+            </h2>
+
+            <h3 class="fade-line">
+                Today...
+            </h3>
+
+            <h1 class="fade-line">
+                It's yours.
+            </h1>
+
+            <div class="name-box">
+
+                <span class="for">
+                    For
+                </span>
+
+                <h1 class="arabic-name">
+                    دعاء
+                </h1>
+
+                <h2 class="english-name">
+                    Doaa
+                </h2>
+
+            </div>
+
+            <button id="continueBtn">
+                Continue →
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Question ================= -->
+
+    <section id="questionScene" class="scene">
+
+        <div class="question-box">
+
+            <h1>
+                Are you ready for your birthday surprise?
+            </h1>
+
+            <div class="buttons">
+
+                <button id="yesBtn">
+                    Yes 💜
+                </button>
+
+                <button id="noBtn">
+                    No 🙂
+                </button>
+
+            </div>
+
+            <p id="funnyText"></p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Countdown ================= -->
+
+    <section id="countdownScene" class="scene">
+
+        <div id="countdown">
+
+            3
+
+        </div>
+
+    </section>
+
+    <!-- ================= Birthday ================= -->
+
+    <section id="birthdayScene" class="scene">
+
+        <div class="birthday-container">
+
+            <h2>Happy Birthday</h2>
+
+            <h1>دعاء</h1>
+
+            <h3>Doaa</h3>
+
+            <p>Sweet Sixteen ✨</p>
+
+            <!-- Cake -->
+            <div class="cake">
+
+                <div class="cake-top"></div>
+
+                <div class="cake-middle"></div>
+
+                <div class="cake-bottom"></div>
+
+                <div class="candles">
+
+                    <div class="candle">
+                        <span class="flame"></span>
+                    </div>
+
+                    <div class="candle">
+                        <span class="flame"></span>
+                    </div>
+
+                    <div class="candle">
+                        <span class="flame"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="birthday-buttons">
+
+                <button id="musicBtn">
+
+                    🎵 Play Music
+
+                </button>
+
+                <button id="giftBtn">
+
+                    🎁 Open Your Gift
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Message ================= -->
+
+    <section id="messageScene" class="scene">
+
+        <div class="message-box">
+
+            <p id="typingText"></p>
+
+            <button id="nextGiftBtn">
+
+                Continue →
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Gift ================= -->
+
+    <section id="giftScene" class="scene">
+
+        <div class="gift-container">
+
+            <div id="giftBox">
+
+                <div class="lid"></div>
+
+                <div class="box"></div>
+
+            </div>
+
+            <div id="roseContainer"></div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Ending ================= -->
+
+    <section id="endingScene" class="scene">
+
+        <div class="ending">
+
+            <h2>
+
+                May this year be kinder to you than the last.
+
+            </h2>
+
+            <h1>
+
+                Happy Birthday
+
+            </h1>
+
+            <h1 class="last-name">
+
+                دعاء
+
+            </h1>
+
+            <h2>
+
+                Doaa
+
+            </h2>
+
+        </div>
+
+    </section>
+
+    <!-- Audio -->
+
+    <audio id="birthdayMusic">
+
+        <source src="assets/music.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <audio id="clickSound">
+
+        <source src="assets/click.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <audio id="openSound">
+
+        <source src="assets/open.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
